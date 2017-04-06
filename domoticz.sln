@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "domoticz", "..\domoticz-test\msbuild\domoticz.vcxproj", "{6AD96441-5B2C-467B-AAB6-A1B8368D503A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "domoticz-linux", "domoticz-linux.vcxproj", "{6B126A04-E58E-4FF7-BEA4-B44E4011260D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Debug|ARM.ActiveCfg = Debug|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Debug|Win32.Build.0 = Debug|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Debug|x64.ActiveCfg = Debug|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Release|ARM.ActiveCfg = Release|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Release|Win32.ActiveCfg = Release|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Release|Win32.Build.0 = Release|Win32
+		{6AD96441-5B2C-467B-AAB6-A1B8368D503A}.Release|x64.ActiveCfg = Release|Win32
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|ARM.Build.0 = Debug|ARM
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|Win32.ActiveCfg = Debug|x86
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|Win32.Build.0 = Debug|x86
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|x64.ActiveCfg = Debug|x64
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Debug|x64.Build.0 = Debug|x64
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|ARM.ActiveCfg = Release|ARM
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|ARM.Build.0 = Release|ARM
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|Win32.ActiveCfg = Release|x86
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|Win32.Build.0 = Release|x86
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|x64.ActiveCfg = Release|x64
+		{6B126A04-E58E-4FF7-BEA4-B44E4011260D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = ..
+	EndGlobalSection
+EndGlobal

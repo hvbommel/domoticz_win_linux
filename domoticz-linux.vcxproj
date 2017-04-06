@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Xsd Include="Config\device_classes.xsd" />
+    <Xsd Include="Config\device_configuration.xsd" />
+    <Xsd Include="Config\manufacturer_specific.xsd" />
+    <Xsd Include="Config\options.xsd" />
+    <Xsd Include="Config\zwcfg.xsd" />
+    <Xsd Include="Config\zwscene.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\domoticz-test\hardware\1Wire\OneWireDomoticzService\OneWireDomoticzService\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\domoticz-test\hardware\1Wire.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\1Wire\1WireByKernel.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\1Wire\1WireByOWFS.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\1Wire\1WireCommon.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\1Wire\1WireForWindows.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\AccuWeather.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\AnnaThermostat.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Arilux.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ASyncSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ASyncTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\AtagOne.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\BleBox.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Comm5Serial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Comm5TCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\csocket.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\CurrentCostMeterBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\CurrentCostMeterSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\CurrentCostMeterTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Daikin.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DarkSky.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DavisLoggerSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DenkoviSmartdenLan.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DomoticzHardware.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DomoticzInternal.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\DomoticzTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Dummy.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Ec3kMeterTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\EcoDevices.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\EnOceanESP2.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\EnOceanESP3.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ETH8020.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\evohome.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Fitbit.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\FritzboxTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\GoodweAPI.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Gpio.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\GpioPin.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\HardwareMonitor.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\HarmonyHub.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\HEOS.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\HttpPoller.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\I2C.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ICYThermostat.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\InComfort.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\KMTronic433.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\KMTronicBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\KMTronicSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\KMTronicTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\KMTronicUDP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Kodi.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\libusbwinusbbridge.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Limitless.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\LogitechMediaServer.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Meteostick.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MochadTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MQTT.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MultiFun.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MySensorsBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MySensorsMQTT.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MySensorsSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\MySensorsTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\NefitEasy.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Nest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Netatmo.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OpenWeatherMap.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OpenWebNetTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OpenWebNetUSB.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\openwebnet\bt_openwebnet.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OpenZWave.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\openzwave\control_panel\ozwcp.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\openzwave\control_panel\zwavelib.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OTGWBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OTGWSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\OTGWTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\P1MeterBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\P1MeterSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\P1MeterTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\PanasonicTV.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\PhilipsHue\PhilipsHue.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\PhilipsHue\PhilipsHueSensors.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\PiFace.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Pinger.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\DelayedLink.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\PluginManager.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\PluginProtocols.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\Plugins.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\PluginTransports.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\plugins\PythonObjects.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\PVOutput_Input.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RAVEn.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Razberry.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Rego6XXSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RelayNet.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFLinkBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFLinkSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFLinkTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFXBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFXComSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\RFXComTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\S0MeterBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\S0MeterSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\S0MeterTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SatelIntegra.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SBFSpot.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\serial\impl\unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\serial\impl\win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\serial\serial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SolarEdgeAPI.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SolarMaxTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Sterbox.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\TCPProxy\tcpproxy_server.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\TE923.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\TE923Tool.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\TeleinfoBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\TeleinfoSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\getopt_long.c" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\client\CallbackDispatcher.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\client\CallbackMainDispatcher.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\client\Client.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\client\telldus-core.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Event.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\EventHandler_unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\EventHandler_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Event_unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Event_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Message.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Mutex.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Socket_unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Socket_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\stdlibc_workaround.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Strings.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\common\Thread.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ClientCommunicationHandler.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ConnectionListener_unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ConnectionListener_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Controller.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ControllerListener_mac.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ControllerManager.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ControllerMessage.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Device.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\DeviceManager.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\EventUpdateManager.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Log.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\main_mac.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\main_unix.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\main_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Protocol.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolBrateck.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolComen.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolEverflourish.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolFineoffset.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolFuhaote.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolGroup.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolHasta.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolIkea.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolMandolyn.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolNexa.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolOregon.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolRisingSun.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolSartano.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolScene.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolSilvanChip.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolUpm.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolWaveman.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolX10.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\ProtocolYidong.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Sensor.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Settings.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\SettingsConfuse.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\SettingsCoreFoundationPreferences.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\SettingsWinRegistry.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\TelldusMain.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\TelldusWinService_win.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\TellStick.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\TellStick_ftd2xx.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\TellStick_libftdi.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\service\Timer.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tdadmin\main.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tdtool\main.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\common\StringsTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\cppunit.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolEverflourishTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolHastaTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolNexaTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolOregonTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolSartanoTest.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolX10Test.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Tellstick.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Thermosmart.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ToonThermostat.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\VolcraftCO20.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Winddelen.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\WOL.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Wunderground.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\XiaomiGateway.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\Yeelight.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\YouLess.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ZiBlueBase.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ZiBlueSerial.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ZiBlueTCP.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\ZWaveBase.cpp" />
+    <ClCompile Include="..\domoticz-test\httpclient\HTTPClient.cpp" />
+    <ClCompile Include="..\domoticz-test\httpclient\UrlEncode.cpp" />
+    <ClCompile Include="..\domoticz-test\json\json_reader.cpp" />
+    <ClCompile Include="..\domoticz-test\json\json_value.cpp" />
+    <ClCompile Include="..\domoticz-test\json\json_writer.cpp" />
+    <ClCompile Include="..\domoticz-test\lua\src\lapi.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lauxlib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lbaselib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lbitlib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lcode.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lcorolib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lctype.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ldblib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ldebug.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ldo.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ldump.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lfunc.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lgc.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\linit.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\liolib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\llex.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lmathlib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lmem.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\loadlib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lobject.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lopcodes.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\loslib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lparser.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lstate.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lstring.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lstrlib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ltable.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ltablib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\ltm.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lua.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\luac.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lundump.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lutf8lib.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lvm.c" />
+    <ClCompile Include="..\domoticz-test\lua\src\lzio.c" />
+    <ClCompile Include="..\domoticz-test\main\Camera.cpp" />
+    <ClCompile Include="..\domoticz-test\main\CmdLine.cpp" />
+    <ClCompile Include="..\domoticz-test\main\domoticz.cpp" />
+    <ClCompile Include="..\domoticz-test\main\EventSystem.cpp" />
+    <ClCompile Include="..\domoticz-test\main\Helper.cpp" />
+    <ClCompile Include="..\domoticz-test\main\localtime_r.cpp" />
+    <ClCompile Include="..\domoticz-test\main\Logger.cpp" />
+    <ClCompile Include="..\domoticz-test\main\LuaHandler.cpp" />
+    <ClCompile Include="..\domoticz-test\main\mainworker.cpp" />
+    <ClCompile Include="..\domoticz-test\main\RFXNames.cpp" />
+    <ClCompile Include="..\domoticz-test\main\Scheduler.cpp" />
+    <ClCompile Include="..\domoticz-test\main\SQLHelper.cpp" />
+    <ClCompile Include="..\domoticz-test\main\stdafx.cpp" />
+    <ClCompile Include="..\domoticz-test\main\SunRiseSet.cpp" />
+    <ClCompile Include="..\domoticz-test\main\WebServer.cpp" />
+    <ClCompile Include="..\domoticz-test\main\WebServerHelper.cpp" />
+    <ClCompile Include="..\domoticz-test\main\WindCalculation.cpp" />
+    <ClCompile Include="..\domoticz-test\MQTT\logging_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\memory_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\messages_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\mosquitto.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\mosquittopp.cpp" />
+    <ClCompile Include="..\domoticz-test\MQTT\net_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\read_handle.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\read_handle_client.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\read_handle_shared.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\send_client_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\send_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\socks_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\srv_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\thread_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\time_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\tls_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\util_mosq.c" />
+    <ClCompile Include="..\domoticz-test\MQTT\will_mosq.c" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationBase.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationEmail.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationGCM.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationHelper.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationHTTP.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationKodi.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationLogitechMediaServer.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationNma.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationProwl.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationPushalot.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationPushbullet.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationPushover.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationPushsafer.cpp" />
+    <ClCompile Include="..\domoticz-test\notifications\NotificationSMS.cpp" />
+    <ClCompile Include="..\domoticz-test\push\BasePush.cpp" />
+    <ClCompile Include="..\domoticz-test\push\FibaroPush.cpp" />
+    <ClCompile Include="..\domoticz-test\push\GooglePubSubPush.cpp" />
+    <ClCompile Include="..\domoticz-test\push\HttpPush.cpp" />
+    <ClCompile Include="..\domoticz-test\push\InfluxPush.cpp" />
+    <ClCompile Include="..\domoticz-test\smtpclient\SMTPClient.cpp" />
+    <ClCompile Include="..\domoticz-test\sqlite\sqlite3.c" />
+    <ClCompile Include="..\domoticz-test\tcpserver\TCPClient.cpp" />
+    <ClCompile Include="..\domoticz-test\tcpserver\TCPServer.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\action_store.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\htmlutil.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\lex_util.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\main.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\node_set.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\tinystr.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\tinyxml.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\tinyxmlerror.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\tinyxmlparser.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\tokenlist.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xml_util.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_expression.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_processor.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_stack.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_static.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_stream.cpp" />
+    <ClCompile Include="..\domoticz-test\tinyxpath\xpath_syntax.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\Base64.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\connection.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\connection_manager.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\cWebem.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\fastcgi.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\mime_types.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\proxyclient.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\proxycommon.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\reply.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\request_handler.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\request_parser.cpp" />
+    <ClCompile Include="..\domoticz-test\webserver\server.cpp" />
+    <ClCompile Include="..\domoticz-test\zip\unzip.cpp" />
+    <ClCompile Include="..\domoticz-test\zip\zip.cpp" />
+    <ClCompile Include="..\domoticz-test\zlib\adler32.c" />
+    <ClCompile Include="..\domoticz-test\zlib\compress.c" />
+    <ClCompile Include="..\domoticz-test\zlib\crc32.c" />
+    <ClCompile Include="..\domoticz-test\zlib\deflate.c" />
+    <ClCompile Include="..\domoticz-test\zlib\gzclose.c" />
+    <ClCompile Include="..\domoticz-test\zlib\gzlib.c" />
+    <ClCompile Include="..\domoticz-test\zlib\gzread.c" />
+    <ClCompile Include="..\domoticz-test\zlib\gzwrite.c" />
+    <ClCompile Include="..\domoticz-test\zlib\infback.c" />
+    <ClCompile Include="..\domoticz-test\zlib\inffast.c" />
+    <ClCompile Include="..\domoticz-test\zlib\inflate.c" />
+    <ClCompile Include="..\domoticz-test\zlib\inftrees.c" />
+    <ClCompile Include="..\domoticz-test\zlib\trees.c" />
+    <ClCompile Include="..\domoticz-test\zlib\uncompr.c" />
+    <ClCompile Include="..\domoticz-test\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\domoticz-test\hardware\1Wire.h" />
+    <ClInclude Include="..\domoticz-test\hardware\1Wire\1WireByKernel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\1Wire\1WireByOWFS.h" />
+    <ClInclude Include="..\domoticz-test\hardware\1Wire\1WireCommon.h" />
+    <ClInclude Include="..\domoticz-test\hardware\1Wire\1WireForWindows.h" />
+    <ClInclude Include="..\domoticz-test\hardware\1Wire\1WireSystem.h" />
+    <ClInclude Include="..\domoticz-test\hardware\AccuWeather.h" />
+    <ClInclude Include="..\domoticz-test\hardware\AnnaThermostat.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Arilux.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ASyncSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ASyncTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\AtagOne.h" />
+    <ClInclude Include="..\domoticz-test\hardware\BleBox.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Comm5Serial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Comm5TCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\csocket.h" />
+    <ClInclude Include="..\domoticz-test\hardware\CurrentCostMeterBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\CurrentCostMeterSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\CurrentCostMeterTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Daikin.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DarkSky.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DavisLoggerSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DenkoviSmartdenLan.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DomoticzHardware.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DomoticzInternal.h" />
+    <ClInclude Include="..\domoticz-test\hardware\DomoticzTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Dummy.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Ec3kMeterTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\EcoDevices.h" />
+    <ClInclude Include="..\domoticz-test\hardware\EnOceanESP2.h" />
+    <ClInclude Include="..\domoticz-test\hardware\EnOceanESP3.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ETH8020.h" />
+    <ClInclude Include="..\domoticz-test\hardware\evohome.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Fitbit.h" />
+    <ClInclude Include="..\domoticz-test\hardware\FritzboxTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\GoodweAPI.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Gpio.h" />
+    <ClInclude Include="..\domoticz-test\hardware\GpioPin.h" />
+    <ClInclude Include="..\domoticz-test\hardware\HardwareMonitor.h" />
+    <ClInclude Include="..\domoticz-test\hardware\hardwaretypes.h" />
+    <ClInclude Include="..\domoticz-test\hardware\HarmonyHub.h" />
+    <ClInclude Include="..\domoticz-test\hardware\HEOS.h" />
+    <ClInclude Include="..\domoticz-test\hardware\HttpPoller.h" />
+    <ClInclude Include="..\domoticz-test\hardware\I2C.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ICYThermostat.h" />
+    <ClInclude Include="..\domoticz-test\hardware\InComfort.h" />
+    <ClInclude Include="..\domoticz-test\hardware\KMTronic433.h" />
+    <ClInclude Include="..\domoticz-test\hardware\KMTronicBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\KMTronicSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\KMTronicTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\KMTronicUDP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Kodi.h" />
+    <ClInclude Include="..\domoticz-test\hardware\libusbwinusbbridge.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Limitless.h" />
+    <ClInclude Include="..\domoticz-test\hardware\LogitechMediaServer.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MCP23x17.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Meteostick.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MochadTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MQTT.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MultiFun.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MySensorsBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MySensorsMQTT.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MySensorsSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\MySensorsTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\NefitEasy.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Nest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Netatmo.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OpenWeatherMap.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OpenWebNetTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OpenWebNetUSB.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openwebnet\bt_openwebnet.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OpenZWave.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\aes.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\aescpp.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\aesopt.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\aestab.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\brg_endian.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\aes\brg_types.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Bitfield.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Alarm.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ApplicationStatus.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Association.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\AssociationCommandConfiguration.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Basic.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\BasicWindowCovering.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Battery.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\CentralScene.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ClimateControlSchedule.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Clock.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Color.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\CommandClass.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\CommandClasses.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Configuration.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ControllerReplication.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\CRC16Encap.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\DeviceResetLocally.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\DoorLock.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\DoorLockLogging.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\EnergyProduction.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Hail.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Indicator.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Language.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Lock.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ManufacturerSpecific.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Meter.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\MeterPulse.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\MultiCmd.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\MultiInstance.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\MultiInstanceAssociation.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\NodeNaming.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\NoOperation.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Powerlevel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Proprietary.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Protection.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SceneActivation.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Security.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SensorAlarm.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SensorBinary.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SensorMultilevel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SwitchAll.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SwitchBinary.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SwitchMultilevel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SwitchToggleBinary.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\SwitchToggleMultilevel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ThermostatFanMode.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ThermostatFanState.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ThermostatMode.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ThermostatOperatingState.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ThermostatSetpoint.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\TimeParameters.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\UserCode.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\Version.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\WakeUp.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\command_classes\ZWavePlusInfo.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\control_panel\ozwcp.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Defs.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\DoxygenMain.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Driver.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Group.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Manager.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Msg.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Node.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Notification.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Options.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\OZWException.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Controller.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Event.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\FileOps.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\HidController.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Log.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Mutex.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Ref.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\SerialController.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Stream.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Thread.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\TimeStamp.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\platform\Wait.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Scene.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\Utils.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\Value.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueBool.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueButton.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueByte.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueDecimal.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueID.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueInt.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueList.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueRaw.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueSchedule.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueShort.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueStore.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\value_classes\ValueString.h" />
+    <ClInclude Include="..\domoticz-test\hardware\openzwave\ZWSecurity.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OTGWBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OTGWSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\OTGWTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\P1MeterBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\P1MeterSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\P1MeterTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\PanasonicTV.h" />
+    <ClInclude Include="..\domoticz-test\hardware\PhilipsHue\PhilipsHue.h" />
+    <ClInclude Include="..\domoticz-test\hardware\PhilipsHue\PhilipsHueSensors.h" />
+    <ClInclude Include="..\domoticz-test\hardware\PiFace.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Pinger.h" />
+    <ClInclude Include="..\domoticz-test\hardware\pinger\icmp_header.h" />
+    <ClInclude Include="..\domoticz-test\hardware\pinger\ipv4_header.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\DelayedLink.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\abstract.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\accu.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\asdl.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\ast.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\bitset.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\bltinmodule.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\boolobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\bytearrayobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\bytesobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\bytes_methods.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\cellobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\ceval.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\classobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\code.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\codecs.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\compile.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\complexobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\datetime.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\descrobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\dictobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\dtoa.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\dynamic_annotations.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\enumobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\errcode.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\eval.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\fileobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\fileutils.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\floatobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\frameobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\funcobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\genobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\graminit.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\grammar.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\import.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\intrcheck.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\iterobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\listobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\longintrepr.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\longobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\marshal.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\memoryobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\metagrammar.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\methodobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\modsupport.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\moduleobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\namespaceobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\node.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\object.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\objimpl.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\odictobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\opcode.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\osdefs.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\parsetok.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\patchlevel.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pgen.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pgenheaders.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyarena.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyatomic.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pycapsule.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyconfig.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyctype.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pydebug.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyerrors.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyexpat.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyfpe.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pygetopt.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyhash.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pylifecycle.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pymacconfig.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pymacro.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pymath.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pymem.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pyport.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pystate.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pystrcmp.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pystrhex.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pystrtod.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\Python-ast.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\Python.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pythonrun.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pythread.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\pytime.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\py_curses.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\rangeobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\setobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\sliceobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\structmember.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\structseq.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\symtable.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\sysmodule.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\token.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\traceback.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\tupleobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\typeslots.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\ucnhash.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\unicodeobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\warnings.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Include\weakrefobject.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\PluginManager.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\PluginMessages.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\PluginProtocols.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\Plugins.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\PluginTransports.h" />
+    <ClInclude Include="..\domoticz-test\hardware\plugins\PythonObjects.h" />
+    <ClInclude Include="..\domoticz-test\hardware\PVOutput_Input.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RAVEn.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Razberry.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Rego6XXSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RelayNet.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFLinkBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFLinkSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFLinkTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFXBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFXComSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\RFXComTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\S0MeterBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\S0MeterSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\S0MeterTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SatelIntegra.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SBFSpot.h" />
+    <ClInclude Include="..\domoticz-test\hardware\serial\impl\unix.h" />
+    <ClInclude Include="..\domoticz-test\hardware\serial\impl\win.h" />
+    <ClInclude Include="..\domoticz-test\hardware\serial\serial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\serial\v8stdint.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SolarEdgeAPI.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SolarMaxTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Sterbox.h" />
+    <ClInclude Include="..\domoticz-test\hardware\TCPProxy\tcpproxy_server.h" />
+    <ClInclude Include="..\domoticz-test\hardware\TE923.h" />
+    <ClInclude Include="..\domoticz-test\hardware\TE923Tool.h" />
+    <ClInclude Include="..\domoticz-test\hardware\TeleinfoBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\TeleinfoSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\err.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\getopt.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\machine\cdefs.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\machine\endian.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\machine\_types.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\sys\cdefs.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\sys\types.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\sys\unistd.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\sys\_types.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\3rdparty\openbsd-getopt\unistd.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\client\CallbackDispatcher.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\client\CallbackMainDispatcher.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\client\Client.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\client\telldus-core.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\common.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Event.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\EventHandler.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Message.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Mutex.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Socket.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Strings.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\common\Thread.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ClientCommunicationHandler.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ConnectionListener.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Controller.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ControllerListener.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ControllerManager.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ControllerMessage.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Device.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\DeviceManager.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\EventUpdateManager.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ftd2xx.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Log.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\osx\ftd2xx.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\osx\WinTypes.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Protocol.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolBrateck.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolComen.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolEverflourish.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolFineoffset.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolFuhaote.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolGroup.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolHasta.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolIkea.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolMandolyn.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolNexa.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolOregon.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolRisingSun.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolSartano.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolScene.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolSilvanChip.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolUpm.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolWaveman.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolX10.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\ProtocolYidong.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Sensor.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Settings.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\TelldusMain.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\TelldusWinService_win.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\TellStick.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\Timer.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\service\win\ftd2xx.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\common\CommonTests.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\common\StringsTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolEverflourishTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolHastaTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolNexaTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolOregonTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolSartanoTest.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ProtocolX10Test.h" />
+    <ClInclude Include="..\domoticz-test\hardware\telldus-core\tests\service\ServiceTests.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Tellstick.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Thermosmart.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ToonThermostat.h" />
+    <ClInclude Include="..\domoticz-test\hardware\VolcraftCO20.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Winddelen.h" />
+    <ClInclude Include="..\domoticz-test\hardware\WOL.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Wunderground.h" />
+    <ClInclude Include="..\domoticz-test\hardware\XiaomiGateway.h" />
+    <ClInclude Include="..\domoticz-test\hardware\Yeelight.h" />
+    <ClInclude Include="..\domoticz-test\hardware\YouLess.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ZiBlueBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ZiBlueSerial.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ZiBlueTCP.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ziblue_usb_frame_api.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ZWaveBase.h" />
+    <ClInclude Include="..\domoticz-test\hardware\ZWaveCommands.h" />
+    <ClInclude Include="..\domoticz-test\httpclient\HTTPClient.h" />
+    <ClInclude Include="..\domoticz-test\httpclient\sock_port.h" />
+    <ClInclude Include="..\domoticz-test\httpclient\UrlEncode.h" />
+    <ClInclude Include="..\domoticz-test\json\allocator.h" />
+    <ClInclude Include="..\domoticz-test\json\assertions.h" />
+    <ClInclude Include="..\domoticz-test\json\autolink.h" />
+    <ClInclude Include="..\domoticz-test\json\config.h" />
+    <ClInclude Include="..\domoticz-test\json\features.h" />
+    <ClInclude Include="..\domoticz-test\json\forwards.h" />
+    <ClInclude Include="..\domoticz-test\json\json.h" />
+    <ClInclude Include="..\domoticz-test\json\json_batchallocator.h" />
+    <ClInclude Include="..\domoticz-test\json\json_tool.h" />
+    <ClInclude Include="..\domoticz-test\json\reader.h" />
+    <ClInclude Include="..\domoticz-test\json\value.h" />
+    <ClInclude Include="..\domoticz-test\json\version.h" />
+    <ClInclude Include="..\domoticz-test\json\writer.h" />
+    <ClInclude Include="..\domoticz-test\libusb\hidpi.h" />
+    <ClInclude Include="..\domoticz-test\libusb\hidsdi.h" />
+    <ClInclude Include="..\domoticz-test\libusb\hidusage.h" />
+    <ClInclude Include="..\domoticz-test\libusb\usb.h" />
+    <ClInclude Include="..\domoticz-test\libusb\usb100.h" />
+    <ClInclude Include="..\domoticz-test\libusb\usb200.h" />
+    <ClInclude Include="..\domoticz-test\libusb\winusb.h" />
+    <ClInclude Include="..\domoticz-test\libusb\winusbio.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lapi.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lauxlib.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lcode.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lctype.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\ldebug.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\ldo.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lfunc.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lgc.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\llex.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\llimits.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lmem.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lobject.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lopcodes.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lparser.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lprefix.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lstate.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lstring.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\ltable.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\ltm.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lua.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lua.hpp" />
+    <ClInclude Include="..\domoticz-test\lua\src\luaconf.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lualib.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lundump.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lvm.h" />
+    <ClInclude Include="..\domoticz-test\lua\src\lzio.h" />
+    <ClInclude Include="..\domoticz-test\main\appversion.h" />
+    <ClInclude Include="..\domoticz-test\main\Camera.h" />
+    <ClInclude Include="..\domoticz-test\main\CmdLine.h" />
+    <ClInclude Include="..\domoticz-test\main\concurrent_queue.h" />
+    <ClInclude Include="..\domoticz-test\main\dirent_windows.h" />
+    <ClInclude Include="..\domoticz-test\main\EventSystem.h" />
+    <ClInclude Include="..\domoticz-test\main\Helper.h" />
+    <ClInclude Include="..\domoticz-test\main\localtime_r.h" />
+    <ClInclude Include="..\domoticz-test\main\Logger.h" />
+    <ClInclude Include="..\domoticz-test\main\LuaHandler.h" />
+    <ClInclude Include="..\domoticz-test\main\mainstructs.h" />
+    <ClInclude Include="..\domoticz-test\main\mainworker.h" />
+    <ClInclude Include="..\domoticz-test\main\RFXNames.h" />
+    <ClInclude Include="..\domoticz-test\main\RFXtrx.h" />
+    <ClInclude Include="..\domoticz-test\main\Scheduler.h" />
+    <ClInclude Include="..\domoticz-test\main\SQLHelper.h" />
+    <ClInclude Include="..\domoticz-test\main\stdafx.h" />
+    <ClInclude Include="..\domoticz-test\main\SunRiseSet.h" />
+    <ClInclude Include="..\domoticz-test\main\targetver.h" />
+    <ClInclude Include="..\domoticz-test\main\unzip.h" />
+    <ClInclude Include="..\domoticz-test\main\unzip_iterator.h" />
+    <ClInclude Include="..\domoticz-test\main\unzip_stream.h" />
+    <ClInclude Include="..\domoticz-test\main\WebServer.h" />
+    <ClInclude Include="..\domoticz-test\main\WebServerHelper.h" />
+    <ClInclude Include="..\domoticz-test\main\WindCalculation.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\config.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\dummypthread.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\lib_load.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\logging_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\memory_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\messages_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mosquitto.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mosquittopp.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mosquitto_broker.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mosquitto_internal.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mosquitto_plugin.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\mqtt3_protocol.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\net_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\persist.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\read_handle.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\send_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\socks_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\time_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\tls_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\uthash.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\util_mosq.h" />
+    <ClInclude Include="..\domoticz-test\MQTT\will_mosq.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationBase.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationEmail.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationGCM.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationHelper.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationHTTP.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationKodi.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationLogitechMediaServer.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationNma.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationProwl.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationPushalot.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationPushbullet.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationPushover.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationPushsafer.h" />
+    <ClInclude Include="..\domoticz-test\notifications\NotificationSMS.h" />
+    <ClInclude Include="..\domoticz-test\notifications\xmbcclient.h" />
+    <ClInclude Include="..\domoticz-test\push\BasePush.h" />
+    <ClInclude Include="..\domoticz-test\push\FibaroPush.h" />
+    <ClInclude Include="..\domoticz-test\push\GooglePubSubPush.h" />
+    <ClInclude Include="..\domoticz-test\push\HttpPush.h" />
+    <ClInclude Include="..\domoticz-test\push\InfluxPush.h" />
+    <ClInclude Include="..\domoticz-test\smtpclient\SMTPClient.h" />
+    <ClInclude Include="..\domoticz-test\sqlite\sqlite3.h" />
+    <ClInclude Include="..\domoticz-test\tcpserver\TCPClient.h" />
+    <ClInclude Include="..\domoticz-test\tcpserver\TCPServer.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\action_store.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\byte_stream.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\htmlutil.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\lex_token.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\lex_util.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\node_set.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\tinystr.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\tinyxml.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\tinyxpath_conf.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\tokenlist.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xml_util.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_expression.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_processor.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_stack.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_static.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_stream.h" />
+    <ClInclude Include="..\domoticz-test\tinyxpath\xpath_syntax.h" />
+    <ClInclude Include="..\domoticz-test\webserver\Base64.h" />
+    <ClInclude Include="..\domoticz-test\webserver\connection.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\connection_manager.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\cWebem.h" />
+    <ClInclude Include="..\domoticz-test\webserver\fastcgi.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\GZipHelper.h" />
+    <ClInclude Include="..\domoticz-test\webserver\header.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\mime_types.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\proxyclient.h" />
+    <ClInclude Include="..\domoticz-test\webserver\proxycommon.h" />
+    <ClInclude Include="..\domoticz-test\webserver\reply.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\request.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\request_handler.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\request_parser.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\server.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\server_settings.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\session_store.hpp" />
+    <ClInclude Include="..\domoticz-test\webserver\utf.hpp" />
+    <ClInclude Include="..\domoticz-test\zip\crypt.h" />
+    <ClInclude Include="..\domoticz-test\zip\ioapi.h" />
+    <ClInclude Include="..\domoticz-test\zip\unzip.h" />
+    <ClInclude Include="..\domoticz-test\zip\zip.h" />
+    <ClInclude Include="..\domoticz-test\zlib\crc32.h" />
+    <ClInclude Include="..\domoticz-test\zlib\deflate.h" />
+    <ClInclude Include="..\domoticz-test\zlib\gzguts.h" />
+    <ClInclude Include="..\domoticz-test\zlib\inffast.h" />
+    <ClInclude Include="..\domoticz-test\zlib\inffixed.h" />
+    <ClInclude Include="..\domoticz-test\zlib\inflate.h" />
+    <ClInclude Include="..\domoticz-test\zlib\inftrees.h" />
+    <ClInclude Include="..\domoticz-test\zlib\trees.h" />
+    <ClInclude Include="..\domoticz-test\zlib\zconf.h" />
+    <ClInclude Include="..\domoticz-test\zlib\zlib.h" />
+    <ClInclude Include="..\domoticz-test\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\domoticz-test\hardware\telldus-core\client\libtelldus-core.def" />
+    <None Include="..\domoticz-test\json\json_internalarray.inl" />
+    <None Include="..\domoticz-test\json\json_internalmap.inl" />
+    <None Include="..\domoticz-test\json\json_valueiterator.inl" />
+    <None Include="..\domoticz-test\lua\doc\contents.html" />
+    <None Include="..\domoticz-test\lua\doc\manual.html" />
+    <None Include="..\domoticz-test\lua\doc\readme.html" />
+    <None Include="..\domoticz-test\zlib\win32\zlib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\domoticz-test\zlib\win32\zlib1.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6b126a04-e58e-4ff7-bea4-b44e4011260d}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>domoticz_linux</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/home/pi</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/home/henri/projects</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/home/henri/projects</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/home/henri/projects</RemoteRootDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>/home/henri/projects/domoticz/output</OutDir>
+    <IntDir>/home/henri/projects/domoticz/build</IntDir>
+    <RemoteProjectDir>/home/henri/projects/domoticz</RemoteProjectDir>
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+    <NMakePreprocessorDefinitions>WITH_GPIO</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>/home/henri/projects/domoticz/output</OutDir>
+    <IntDir>/home/henri/projects/domoticz/build</IntDir>
+    <RemoteProjectDir>/home/henri/projects/domoticz</RemoteProjectDir>
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>.\Debug</OutDir>
+    <IntDir>.\Debug</IntDir>
+    <RemoteProjectDir>/home/pi/domoticz</RemoteProjectDir>
+    <AdditionalSourcesToCopyMapping>
+    </AdditionalSourcesToCopyMapping>
+    <NMakePreprocessorDefinitions>WITH_GPIO</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>/home/henri/projects/domoticz</OutDir>
+    <IntDir>/home/henri/projects/domoticz/build</IntDir>
+    <RemoteProjectDir>/home/henri/projects/domoticz</RemoteProjectDir>
+    <AdditionalSourcesToCopyMapping>$(ProjectDir)\.git\objects\pack\;$(ProjectDir)\.git\packed-refs\;$(ProjectDir)\.git\refs\heads\hvbdev;$(ProjectDir)\.git\refs\heads\master;$(ProjectDir)License.txt;$(ProjectDir)History.txt;$(ProjectDir)CMakeLists.txt;$(ProjectDir)hardware/telldus-core/3rdparty/openbsd-getopt/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/client/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/common/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/service/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/tdadmin/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/tdtool/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/tests/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/tests/common/CMakeLists.txt;$(ProjectDir)hardware/telldus-core/tests/service/CMakeLists.txt;$(ProjectDir)lua/CMakeLists.txt;$(ProjectDir)lua/src/CMakeLists.txt;$(ProjectDir)MQTT/CMakeLists.txt;$(ProjectDir)sqlite/CMakeLists.txt;$(ProjectDir)tinyxpath/CMakeLists.txt;$(ProjectDir)zlib/CMakeLists.txt;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <NMakePreprocessorDefinitions>WITH_GPIO</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <BuildLog>
+      <Path>/home/henri/projects/domoticz/logs/build.log</Path>
+    </BuildLog>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>cd /home/henri/projects/domoticz;  chown henri:henri -R /home/henri/projects/domoticz; cmake -DCMAKE_BUILD_TYPE=Debug /home/henri/projects/domoticz/CMakeLists.txt</Command>
+    </RemotePreBuildEvent>
+    <RemotePreBuildEvent>
+      <Message>create debug makefile</Message>
+    </RemotePreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>cd /home/henri/projects/domoticz; make -j 3; chown henri:henri -R /home/henri/projects/domoticz</Command>
+      <Message>make and set owner on all files</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <BuildLog>
+      <Path>/home/henri/projects/domoticz/logs/build.log</Path>
+    </BuildLog>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>cd /home/henri/projects/domoticz;  chown henri:henri -R /home/henri/projects/domoticz; cmake -DCMAKE_BUILD_TYPE=Release /home/henri/projects/domoticz/CMakeLists.txt</Command>
+    </RemotePreBuildEvent>
+    <RemotePreBuildEvent>
+      <Message>create debug makefile</Message>
+    </RemotePreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>cd /home/henri/projects/domoticz; make -j 3; chown henri:henri -R /home/henri/projects/domoticz</Command>
+    </RemotePostBuildEvent>
+    <RemotePostBuildEvent>
+      <Message>make and set owner on all files</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <BuildLog>
+      <Path>.\Debug\domoticz.log</Path>
+    </BuildLog>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>cd /home/pi/domoticz; chown pi:pi -R .; cmake -DCMAKE_BUILD_TYPE=Debug /home/pi/domoticz/CMakeLists.txt</Command>
+    </RemotePreBuildEvent>
+    <RemotePreBuildEvent>
+      <Message>create debug makefile</Message>
+    </RemotePreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>cd /home/pi/domoticz; make -j 3; chown pi:pi -R .</Command>
+    </RemotePostBuildEvent>
+    <RemotePostBuildEvent>
+      <Message>make and set owner on all files</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <BuildLog>
+      <Path>/home/henri/projects/domoticz/build/build.log</Path>
+    </BuildLog>
+    <PreBuildEvent>
+      <Command>\tools\pscp -q -r -pw passwd .git\* root@192.168.2.231:/home/henri/projects/domoticz/.git</Command>
+    </PreBuildEvent>
+    <RemotePreBuildEvent>
+      <Command>cd /home/henri/projects/domoticz;  chown pi:pi -R /home/henri/projects/domoticz; cmake -DCMAKE_BUILD_TYPE=Release /home/henri/projects/domoticz/CMakeLists.txt</Command>
+    </RemotePreBuildEvent>
+    <RemotePreBuildEvent>
+      <Message>create debug makefile</Message>
+    </RemotePreBuildEvent>
+    <RemotePostBuildEvent>
+      <Command>cd /home/henri/projects/domoticz; make -j 3; chown pi:pi -R /home/henri/projects/domoticz</Command>
+    </RemotePostBuildEvent>
+    <RemotePostBuildEvent>
+      <Message>make and set owner on all files</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
