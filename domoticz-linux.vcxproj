@@ -1036,8 +1036,8 @@
     </AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <OutDir>.\Debug</OutDir>
-    <IntDir>.\Debug</IntDir>
+    <OutDir>C:\github\domoticz_win_linux\linux\output</OutDir>
+    <IntDir>C:\github\domoticz_win_linux\linux\temp</IntDir>
     <RemoteProjectDir>/home/pi/domoticz</RemoteProjectDir>
     <AdditionalSourcesToCopyMapping>
     </AdditionalSourcesToCopyMapping>
@@ -1092,7 +1092,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <BuildLog>
-      <Path>.\Debug\domoticz.log</Path>
+      <Path>C:\github\domoticz_win_linux\linux\logs\domoticz.log</Path>
     </BuildLog>
     <PreBuildEvent>
       <Command>
