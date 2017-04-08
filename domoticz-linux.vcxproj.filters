@@ -2218,6 +2218,9 @@
     <ClInclude Include="..\domoticz-test\zlib\zutil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\domoticz-test\hardware\SysfsGPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\domoticz-test\hardware\1Wire.cpp">
@@ -3255,6 +3258,9 @@
     <ClCompile Include="..\domoticz-test\zlib\zutil.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\domoticz-test\hardware\SysfsGPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\domoticz-test\zlib\win32\zlib1.rc" />
@@ -3281,5 +3287,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\domoticz-test\hardware\1Wire\OneWireDomoticzService\OneWireDomoticzService\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="natvis\stl.natvis" />
   </ItemGroup>
 </Project>

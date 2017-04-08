@@ -75,6 +75,7 @@
     <ClCompile Include="..\domoticz-test\hardware\GoodweAPI.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\Gpio.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\GpioPin.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SysfsGPIO.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HardwareMonitor.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HarmonyHub.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HEOS.cpp" />
@@ -423,6 +424,7 @@
     <ClInclude Include="..\domoticz-test\hardware\GoodweAPI.h" />
     <ClInclude Include="..\domoticz-test\hardware\Gpio.h" />
     <ClInclude Include="..\domoticz-test\hardware\GpioPin.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SysfsGPIO.h" />
     <ClInclude Include="..\domoticz-test\hardware\HardwareMonitor.h" />
     <ClInclude Include="..\domoticz-test\hardware\hardwaretypes.h" />
     <ClInclude Include="..\domoticz-test\hardware\HarmonyHub.h" />
@@ -976,6 +978,9 @@
   <ItemGroup>
     <ResourceCompile Include="..\domoticz-test\zlib\win32\zlib1.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="natvis\stl.natvis" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6b126a04-e58e-4ff7-bea4-b44e4011260d}</ProjectGuid>
     <Keyword>Linux</Keyword>
@@ -1024,8 +1029,7 @@
     <OutDir>/home/henri/projects/domoticz/output</OutDir>
     <IntDir>/home/henri/projects/domoticz/build</IntDir>
     <RemoteProjectDir>/home/henri/projects/domoticz</RemoteProjectDir>
-    <AdditionalSourcesToCopyMapping>
-    </AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>$(SolutionDir)..\domoticz-test\CMakeLists.txt</AdditionalSourcesToCopyMapping>
     <NMakePreprocessorDefinitions>WITH_GPIO</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -1039,8 +1043,7 @@
     <OutDir>C:\github\domoticz_win_linux\linux\output</OutDir>
     <IntDir>C:\github\domoticz_win_linux\linux\temp</IntDir>
     <RemoteProjectDir>/home/pi/domoticz</RemoteProjectDir>
-    <AdditionalSourcesToCopyMapping>
-    </AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>$(SolutionDir)..\domoticz-test\CMakeLists.txt</AdditionalSourcesToCopyMapping>
     <NMakePreprocessorDefinitions>WITH_GPIO</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -1059,7 +1062,7 @@
       </Command>
     </PreBuildEvent>
     <RemotePreBuildEvent>
-      <Command>cd /home/henri/projects/domoticz;  chown henri:henri -R /home/henri/projects/domoticz; cmake -DCMAKE_BUILD_TYPE=Debug /home/henri/projects/domoticz/CMakeLists.txt</Command>
+      <Command>cd /home/henri/projects/domoticz;  chown henri:henri -R /home/henri/projects/domoticz; cmake -Wno-dev -DCMAKE_BUILD_TYPE=Debug /home/henri/projects/domoticz/CMakeLists.txt</Command>
     </RemotePreBuildEvent>
     <RemotePreBuildEvent>
       <Message>create debug makefile</Message>
@@ -1099,7 +1102,7 @@
       </Command>
     </PreBuildEvent>
     <RemotePreBuildEvent>
-      <Command>cd /home/pi/domoticz; chown pi:pi -R .; cmake -DCMAKE_BUILD_TYPE=Debug /home/pi/domoticz/CMakeLists.txt</Command>
+      <Command>cd /home/pi/domoticz; chown pi:pi -R .; cmake -Wno-dev -DCMAKE_BUILD_TYPE=Debug /home/pi/domoticz/CMakeLists.txt</Command>
     </RemotePreBuildEvent>
     <RemotePreBuildEvent>
       <Message>create debug makefile</Message>

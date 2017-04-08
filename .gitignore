@@ -1,5 +1,7 @@
 .\vs
-linux/*
-devices/*
-debug/*
-
+linux
+linux\*
+devices
+devices\*
+Debug
+Debug\*
