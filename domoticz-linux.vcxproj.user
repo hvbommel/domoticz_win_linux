@@ -8,7 +8,7 @@
     <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
     <RemoteDebuggerCommand>/home/henri/projects/domoticz/domoticz</RemoteDebuggerCommand>
     <RemoteDebuggerCommandArguments>-dbase /home/henri/projects/domoticz/domoticz.db -sslcert /home/henri/projects/domoticz/server_cert.pem</RemoteDebuggerCommandArguments>
-    <RemoteTarget>2098636051;192.168.2.26 (username=root, port=22, authentication=Password)</RemoteTarget>
+    <RemoteTarget>-2031123973;192.168.2.231 (username=root, port=22, authentication=Password)</RemoteTarget>
     <RemoteDebuggingMode>gdbserver</RemoteDebuggingMode>
     <AdditionalDebuggerCommands>-enable-pretty-printing</AdditionalDebuggerCommands>
   </PropertyGroup>
