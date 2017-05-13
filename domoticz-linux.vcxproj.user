@@ -24,7 +24,7 @@
     <RemoteDebuggerCommandArguments>-dbase /home/pi/domoticz/domoticz.db -sslcert /home/pi/domoticz/server_cert.pem</RemoteDebuggerCommandArguments>
     <RemoteDebuggerWorkingDirectory>/home/pi/domoticz</RemoteDebuggerWorkingDirectory>
     <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
-    <RemoteTarget>-523572164;192.168.2.232 (username=root, port=22, authentication=Password)</RemoteTarget>
+    <RemoteTarget>-2031123973;192.168.2.231 (username=root, port=22, authentication=Password)</RemoteTarget>
     <RemoteDebuggingMode>gdbserver</RemoteDebuggingMode>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
