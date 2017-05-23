@@ -74,7 +74,7 @@
     <ClCompile Include="..\domoticz-test\hardware\GoodweAPI.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\Gpio.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\GpioPin.cpp" />
-    <ClCompile Include="..\domoticz-test\hardware\SysfsGPIO.cpp" />
+    <ClCompile Include="..\domoticz-test\hardware\SysfsGpio.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HardwareMonitor.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HarmonyHub.cpp" />
     <ClCompile Include="..\domoticz-test\hardware\HEOS.cpp" />
@@ -422,7 +422,7 @@
     <ClInclude Include="..\domoticz-test\hardware\GoodweAPI.h" />
     <ClInclude Include="..\domoticz-test\hardware\Gpio.h" />
     <ClInclude Include="..\domoticz-test\hardware\GpioPin.h" />
-    <ClInclude Include="..\domoticz-test\hardware\SysfsGPIO.h" />
+    <ClInclude Include="..\domoticz-test\hardware\SysfsGpio.h" />
     <ClInclude Include="..\domoticz-test\hardware\HardwareMonitor.h" />
     <ClInclude Include="..\domoticz-test\hardware\hardwaretypes.h" />
     <ClInclude Include="..\domoticz-test\hardware\HarmonyHub.h" />
