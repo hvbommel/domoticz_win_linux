@@ -586,9 +586,6 @@
     <ClInclude Include="..\domoticz-test\hardware\evohome.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\domoticz-test\hardware\Fitbit.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\domoticz-test\hardware\FritzboxTCP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -2014,9 +2011,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\domoticz-test\hardware\evohome.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\domoticz-test\hardware\Fitbit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\domoticz-test\hardware\FritzboxTCP.cpp">

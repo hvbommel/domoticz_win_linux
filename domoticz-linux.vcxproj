@@ -941,7 +941,7 @@
     <IntDir>C:\github\domoticz_win_linux\linux\temp</IntDir>
     <RemoteProjectDir>/home/pi/domoticz</RemoteProjectDir>
     <AdditionalSourcesToCopyMapping>$(SolutionDir)..\domoticz-test\CMakeLists.txt</AdditionalSourcesToCopyMapping>
-    <NMakePreprocessorDefinitions>WITH_GPIO; WITH_SYSFS_GPIO</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>WITH_GPIO; WITH_SYSFS_GPIO;WITH_LIBUSB</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <OutDir>/home/henri/projects/domoticz</OutDir>
