@@ -9,7 +9,7 @@
     <RemoteDebuggerCommand>/home/henri/projects/domoticz/domoticz</RemoteDebuggerCommand>
     <RemoteDebuggerCommandArguments>-dbase /home/henri/projects/domoticz/domoticz.db -sslcert /home/henri/projects/domoticz/server_cert.pem</RemoteDebuggerCommandArguments>
     <RemoteTarget>2098636051;192.168.2.26 (username=root, port=22, authentication=Password)</RemoteTarget>
-    <RemoteDebuggingMode>gdbserver</RemoteDebuggingMode>
+    <RemoteDebuggingMode>gdb</RemoteDebuggingMode>
     <AdditionalDebuggerCommands>-enable-pretty-printing</AdditionalDebuggerCommands>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -25,7 +25,7 @@
     <RemoteDebuggerWorkingDirectory>/home/pi/domoticz</RemoteDebuggerWorkingDirectory>
     <DebuggerFlavor>LinuxDebugger</DebuggerFlavor>
     <RemoteTarget>-2031123973;192.168.2.231 (username=root, port=22, authentication=Password)</RemoteTarget>
-    <RemoteDebuggingMode>gdbserver</RemoteDebuggingMode>
+    <RemoteDebuggingMode>gdb</RemoteDebuggingMode>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <RemoteTarget>-2031123973;192.168.2.231 (username=root, port=22, authentication=Password)</RemoteTarget>
